@@ -1,7 +1,9 @@
 {
     "name": "Jump",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:29b5a8b8e32d8fc43b221f4042a414e9"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

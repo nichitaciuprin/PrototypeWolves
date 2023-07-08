@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     {
         var sphere = Sphere();
         if (sphere == null) return;
-        GLLines.DrawCircle(sphere.Value.position,20,sphere.Value.radius,Color.black);
+        // GLLines.DrawCircle(sphere.Value.position,20,sphere.Value.radius,Color.black);
     }
     private void FixedUpdate()
     {

@@ -138,7 +138,7 @@ public class Helper : MonoBehaviour
     {
         Debug.DrawLine(origin, origin+vector, color);
     }
-    public static Vector3 RandomVectorNormilesed()
+    public static Vector3 RandomVector3Normilesed()
     {
         var x = Random.Range(-1,1f);
         var y = Random.Range(-1,1f);
@@ -302,7 +302,7 @@ public class Helper : MonoBehaviour
         var length = 0.04f;
         for (int i = 0; i < 30; i++)
         {
-            var randVec = Helper.RandomVectorNormilesed().normalized;
+            var randVec = Helper.RandomVector3Normilesed().normalized;
             var end = point+randVec*length;
             //var duration = 0.2f;
             //Debug2.DrawLine(start,end,color);

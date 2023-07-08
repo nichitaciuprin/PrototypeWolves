@@ -31,7 +31,7 @@ public class JumpCurveDraw : MonoBehaviour
         for (int i = 1; i < length; i++)
         {
             p1 = points[i];
-            Debug.DrawLine(p0,p1,Color.green);
+            GLLines.DrawLine(p0,p1,Color.green);
             p0 = p1;
         }
     }

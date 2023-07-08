@@ -3,16 +3,18 @@ using UnityEngine;
 public class Test14 : MonoBehaviour
 {
     public Camera cam;
+    private bool slowmotion = false;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            if (Time.timeScale == 1f)
-                Time.timeScale = 0.1f;
-            else
-                Time.timeScale = 1f;
-        }
+            slowmotion = !slowmotion;
+
+        var defaultTime = 1.0f;
+        if (slowmotion)
+            Time.timeScale = defaultTime/3;
+        else
+            Time.timeScale = defaultTime;
 
         var ray = cam.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
         var result = Physics.Raycast(ray, out RaycastHit hit);
